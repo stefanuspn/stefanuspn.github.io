@@ -5,8 +5,7 @@
    ############################################################################
    #                 Written by Stefanus Prasetyo Nugroho                     #
    #                     Stefanusnugroho585@gmail.com                         #
-   #                        Web Using PHP + CSS                               #
-   #                Inspiration Theme By SekolahKoding.com                    #
+   #                    Web Using HTML + CSS + BOOTSTRAP                      #
    #                     OPEN SOURCE & FREE LICENSE                           #
    #                 YOU CAN USE THIS WEB FOR EVERYTHING                      #
    ############################################################################
@@ -16,19 +15,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-     <title>My Website</title>
+     <title>My Portofolio</title>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="shortcut icon" href="images/title.png">
+     <link rel="shortcut icon" href="title.png">
 
      <!--script css -->
       <link href="https://fonts.googleapis.com/css?family=Montserrat|Baloo+Thambi" rel="stylesheet" media="screen">
       <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet' media="screen">
       <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
-      <link href="css/portofolio.css" rel="stylesheet" media="screen">
-      <link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen">
+      <link href="css/portofolio.min.css" rel="stylesheet" media="screen">
+      <link rel="stylesheet" type="text/css" href="css/responsive.min.css" media="screen">
       <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
       <link rel="stylesheet" type="text/css" href="css/minireset.css" media="screen">
       <link rel="stylesheet" type="text/css" href="css/toastr.css" media="screen">
@@ -44,12 +43,12 @@
      <script type="text/javascript" src="js/responsive.min.js"></script>
      <script type="text/javascript" src="js/lightbox.js"></script>
      <script src="js/jquery.lineProgressbar.js"></script>
-     <script type="text/javascript" src="js/app.js"></script>
+     <script type="text/javascript" src="js/app.min.js"></script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="visibility: visible;">
 
-   <div class="navbar-inverse navbar-fixed-top" style="color:white; background-color: #0d243c; border-bottom: 1px dashed white; box-shadow: 1px 5px 2px black; ">
+   <div class="navbar-inverse navbar-fixed-top" style="  border-bottom: 1px dashed white; box-shadow: 1px 5px 2px black; ">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                          <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
@@ -58,9 +57,10 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
                     <li class="active"><a class="nav-link" href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                    <li><a class="nav-link" href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Pendidikan</a></li>
-                    <li><a class="nav-link" href="#skill">Skills</a></li>
+                    <li><a class="nav-link" href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Education</a></li>
+                    <li><a class="nav-link" href="#skill"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Skills</a></li>
                     <li><a class="nav-link" href="#karya"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Karya</a></li>
+                    <li><a class="nav-link" target="_blank" href="http://stefanusfile.000webhostapp.com/"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download Ebook Dan Source Code</a></li>
                 </ul>
             </div>
     </div>
@@ -68,76 +68,20 @@
     <div id="gambar">
         
         <div class ="myname" style="position: relative;">
-            <h2 style="color:white;">Stefanus Prasetyo Nugroho</h2>
-             <div class="motto-myname"><h2>#Komputer adalah hidup saya <br> #Programming adalah hidup saya</h2></div>
-        </div>
-       <div class="tombol">
-            <a target="_blank" href="https://www.facebook.com/prasetyoepen" class="button is-white is-large">facebook</a>
-            <a target=_blank" href="https://github.com/stefanuspn" class="button is-white2 is-large">Github</a>
+          <img src="stefanus.jpg" class="img-circle" style="height: 200px;  border: 10px solid grey;">
+            <h2 style="color:white; text-shadow: 5px 2px 2px white;">Stefanus Prasetyo Nugroho</h2>
+             <div class="motto-myname"><h2>#IT Is My Life <br> #Programming Is My Life</h2></div>
         </div>
       <img  src="http://diysolarpanelsv.com/images/alien-ufo-clipart-22.png"  height="200" alt="UFO" width="300" id="fotogoyang">
-    </div>
-
-    <div class ="container" id="education">
-      <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="margin-left: 40%;">Lihat Pendidikan</button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the modal.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-    </div>
-    <div id="about">
-        <img  class="aboutimg" src="images/stefanus.jpg" width="200"  >
-        <h1 style="font-family: 'Baloo Thambi';font-size:20px; ">Stefanus Prasetyo Nugroho</h1>
-        <p id="demo-1">Seorang Mahasiswa Di LP3I Cikarang Jurusan Teknik informatika Semester 5 Yang Hobi Badminton dan ngoding.Pemrograman Yang Sedang Saya Pelajari adalah HTML5, PHP , CSS 3 , jAVASCRIPT, VB.NET, JAVA dan mungkin lanjut ke Pemrograman android, game programming. Saya juga sedang belajar jaringan  baik cisco ataupun mikrotik, Desain Grafis(photoshop,Corel Draw)</p>
-        <br>
-       <div id="closed"></div>
-          <a href="#popup" class="popup-link">Read More</a>
-            <div class="popup-wrapper" id="popup">
-              <div class="popup-container">
-                <center><img src="images/Stefanus.jpg" name="aboutme" width ="150" height="50" border="0" class="img-circle"></center>
-                          
-                           <br>
-                           <h2 class="media-heading" style="text-align:center;font-family: 'Baloo Thambi'; font-size: 29px;">Stefanus Prasetyo Nugroho <br><small>#Programming Is My Life</small></h2><hr>
-                <p>
-                  Nama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;Stefanus Prasetyo Nugroho<br>
-                            Tempat,Tanggal Lahir : &nbsp;Bekasi,20 Oktober 1997<br>
-                            Umur &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;20 Tahun <br>
-                            Jenis Kelamin &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;Laki-Laki <br>
-                            Agama &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;Kristen Protestan<br>
-                            Alamat  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;Perum Regensi 1 Blok K6 No 20 Kel Wanasari <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kec Cibitung Kab Bekasi
-                           <br><br>
-                           Hobi  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: &nbsp;Badminton Dan Ngoding</p>
-                  <a class="popup-close" href="#closed">X</a>
-                </form>
-              </div>
-            </div>
     </div>
 
 <!--Skill-->
     <div class="jumbotron" id="skill" style="overflow: hidden;">
        <p style="text-align: center;font-size: 25px;">Skills</p>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3" style="margin-left: 10%; margin-right: 5px; ">
                     <div class="thumbnail">
-                        <a href="images/css3.png" rel="lightbox" title="my caption"><img src="images/css3.png" style="width: 60%; height: 100px;"></a>
+                        <a href="css3.png" rel="lightbox" title="my caption"><img src="css3.png" style="width: 60%; height: 100px;"></a>
                         <div class="caption">
                             <h2>CSS 3</h2>
                             <div id="css"></div>
@@ -145,73 +89,73 @@
 
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="thumbnail">
-                       <a href="images/html5.png" rel="lightbox" title="my caption"><img src="images/html5.png" style="width: 60%; height: 100px; "></a>
+                       <a href="html5.png" rel="lightbox" title="my caption"><img src="html5.png" style="width: 60%; height: 100px; "></a>
                         <div class="caption">
                             <h2>HTML5</h2>
                             <div id="html"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="thumbnail">
-                       <a href="images/php.png" rel="lightbox" title="my caption"><img src="images/php.png" style="width: 60%; height: 100px; "></a>
+                       <a href="php.png" rel="lightbox" title="my caption"><img src="php.png" style="width: 60%; height: 100px; "></a>
                         <div class="caption">
                             <h2>PHP</h2>
                             <div id="php"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3" style="margin-left: 10%; margin-right: 5px;">
                     <div class="thumbnail">
-                       <a href="images/java.png" rel="lightbox" title="my caption"><img src="images/java.png" style="width: 60%; height: 100px; "></a>
+                       <a href="java.png" rel="lightbox" title="my caption"><img src="java.png" style="width: 60%; height: 100px; "></a>
                         <div class="caption">
                             <h2>JAVA</h2>
                             <div id="java"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="thumbnail">
-                       <a href="images/javascript.jpg" rel="lightbox" title="my caption"><img src="images/javascript.jpg" style="width: 60%; height: 100px; "></a>
+                       <a href="javascript.jpg" rel="lightbox" title="my caption"><img src="javascript.jpg" style="width: 60%; height: 100px; "></a>
                         <div class="caption">
                             <h2>JAVASCRIPT</h2>
                             <div id="javascript"></div>
                         </div>
                     </div>
                 </div>
-                  <div class="col-md-4">
+                  <div class="col-md-3">
                     <div class="thumbnail">
-                       <a href="images/jquery.jpg" rel="lightbox" title="my caption"><img src="images/jquery.jpg" style="width: 60%; height: 100px; "></a>
+                       <a href="jquery.jpg" rel="lightbox" title="my caption"><img src="images/jquery.jpg" style="width: 60%; height: 100px; "></a>
                         <div class="caption">
                             <h2>JQUERY</h2>
                             <div id="jquery"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3" style="margin-left: 10%; margin-right: 5px;">
                     <div class="thumbnail">
-                       <a href="images/vb.net.jpg" rel="lightbox" title="my caption"><img src="images/vb.net.jpg" style="width: 60%; height: 100px; "></a>
+                       <a href="vb.net.jpg" rel="lightbox" title="my caption"><img src="vb.net.jpg" style="width: 60%; height: 100px; "></a>
                         <div class="caption">
                             <h2>ViSUAL BASIC.NET</h2>
                             <div id="vb"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="thumbnail">
-                       <a href="images/photoshop.png" rel="lightbox" title="my caption"><img src="images/photoshop.png" style="width: 60%; height: 100px; "></a>
+                       <a href="photoshop.png" rel="lightbox" title="my caption"><img src="photoshop.png" style="width: 60%; height: 100px; "></a>
                         <div class="caption">
                             <h2>ADOBE PHOTOSHOP</h2>
                             <div id="photoshop"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                   <div class="wow fadeInRight" data-wow-delay="0.2s">
                     <div class="thumbnail">
-                       <a href="images/unity.png" rel="lightbox" title="my caption"><img src="images/unity.png" style="width: 60%; height: 100px; "></a>
+                       <a href="unity.png" rel="lightbox" title="my caption"><img src="unity.png" style="width: 60%; height: 100px; "></a>
                         <div class="caption">
                             <h2>GAME PROGRAMMING WITH UNITY (Comming Soon)</h2>
                             <div id="unity"></div>
@@ -221,97 +165,88 @@
                 </div>
             </div>  
     </div>
+      <!--Education-->
+      <div class="jumbotron" id="education" style="background-color:#0d243c;;overflow: hidden;">
+       <p style="text-align: center;font-size: 25px; color: white;">Education</p>
+            <div class="row">
+                <div class="col-md-3" style="margin-left: 10%;">
+                    <div class="thumbnail">
+                        <a href="sd.jpg" rel="lightbox" title="SDN Wanasari 12"><img src="sd.jpg" style="width: 1000%; height: 100px;"></a>
+                        <div class="caption">
+                            <h2>SDN Wanasari 12 (2003 - 2009)</h2>
+                            
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                       <a href="smp.jpg" rel="lightbox" title="SMP PGRI Tambun Selatan"><img src="smp.jpg" style="width: 100%; height: 100px; "></a>
+                        <div class="caption">
+                            <h2>SMP PGRI Tambun Selatan (2009 - 2012)</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="thumbnail">
+                       <a href="sma.jpg" rel="lightbox" title="SMAN 1 Cibitung"><img src="sma.jpg" style="width: 100%; height: 100px; "></a>
+                        <div class="caption">
+                            <h2>SMAN 1 Cibitung (2012 - 2015) </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3" style="margin-left: 10%;">
+                    <div class="thumbnail">
+                       <a href="lp3i.jpg" rel="lightbox" title="LP3I Cikarang"><img src="lp3i.jpg" style="width: 100%; height: 100px; "></a>
+                        <div class="caption">
+                            <h2>LP3I Cikarang (2015 - 2017) </h2>
+                        </div>
+                    </div>
+                </div>
+           </div>
+
     <!-- Karya-->
-      <div class="jumbotron" id="karya" style="background-color: red;overflow: hidden;">
+
+      <div class="jumbotron" id="karya" style="background-color:#5D91E6;overflow: hidden;">
        <p style="text-align: center;font-size: 25px;">Karya</p>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="thumbnail">
-                        <a href="images/css3.png" rel="lightbox" title="my caption"><img src="images/css3.png" style="width: 60%; height: 100px;"></a>
+                        <a href="karya.png" rel="lightbox" title="Halaman Login Facebook"><img src="karya.png" style="width: 1000%; height: 100px;"></a>
                         <div class="caption">
-                            <h2>CSS 3</h2>
-                            <div id="css"></div>
+                            <h2>Halaman Login Facebook</h2>
+                            
                         </div>
 
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="thumbnail">
-                       <a href="images/html5.png" rel="lightbox" title="my caption"><img src="images/html5.png" style="width: 60%; height: 100px; "></a>
+                       <a href="profilfb.png" rel="lightbox" title="Halaman Profil Facebook"><img src="profilfb.png" style="width: 100%; height: 100px; "></a>
                         <div class="caption">
-                            <h2>HTML5</h2>
-                            <div id="html"></div>
+                            <h2>Halaman Profil Facebook</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="thumbnail">
-                       <a href="images/php.png" rel="lightbox" title="my caption"><img src="images/php.png" style="width: 60%; height: 100px; "></a>
+                       <a href="loginig.png" rel="lightbox" title="Halaman Login Insagram"><img src="loginig.png" style="width: 100%; height: 100px; "></a>
                         <div class="caption">
-                            <h2>PHP</h2>
-                            <div id="php"></div>
+                            <h2>Halaman Login Instagram</h2>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <div class="thumbnail">
-                       <a href="images/java.png" rel="lightbox" title="my caption"><img src="images/java.png" style="width: 60%; height: 100px; "></a>
+                       <a href="portofolio3.png" rel="lightbox" title="Halaman Portofolio"><img src="portofolio3.png" style="width: 100%; height: 100px; "></a>
                         <div class="caption">
-                            <h2>JAVA</h2>
-                            <div id="java"></div>
+                            <h2>Halaman Portofolio</h2>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                       <a href="images/javascript.jpg" rel="lightbox" title="my caption"><img src="images/javascript.jpg" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>JAVASCRIPT</h2>
-                            <div id="javascript"></div>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-4">
-                    <div class="thumbnail">
-                       <a href="images/jquery.jpg" rel="lightbox" title="my caption"><img src="images/jquery.jpg" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>JQUERY</h2>
-                            <div id="jquery"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                       <a href="images/vb.net.jpg" rel="lightbox" title="my caption"><img src="images/vb.net.jpg" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>ViSUAL BASIC.NET</h2>
-                            <div id="vb"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="thumbnail">
-                       <a href="images/photoshop.png" rel="lightbox" title="my caption"><img src="images/photoshop.png" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>ADOBE PHOTOSHOP</h2>
-                            <div id="photoshop"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="thumbnail">
-                       <a href="images/unity.png" rel="lightbox" title="my caption"><img src="images/unity.png" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>GAME PROGRAMMING WITH UNITY (Comming Soon)</h2>
-                            <div id="unity"></div>
-                        </div>
-                    </div>
-                  </div>  
                 </div>
             </div>  
     </div>
-
+<br><br><br><br>
       <footer style="overflow: hidden;">
     <div class="footer" id="footer">
             <div class="row">
@@ -375,11 +310,11 @@
     </div>
     <!--/.footer-->
     
-    <div class="footer-bottom">
-            <p class="pull-left"> Copyright By Stefanus Prasetyo Nugroho </p>
-    </div>
     <!--/.footer-bottom--> 
 </footer>
+<div class="footer-bottom">
+            <p class="pull-left" style="color: white;"> Copyright By Stefanus Prasetyo Nugroho </p>
+    </div>
       <script type="text/javascript" src="js/progress.js"></script>
 </body>
 </html>
