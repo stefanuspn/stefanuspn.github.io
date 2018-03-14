@@ -14,38 +14,59 @@
 
 <!DOCTYPE html>
 <html>
-  <head>
-     <title>My Portofolio</title>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="shortcut icon" href="title.png">
+<head>
+  <meta charset="UTF-8">
+    <title>Stefanus Prasetyo Nugroho</title>
+    <meta name="og:image" content="https://goo.gl/zgShXD">
+    <meta property="og:image" content="https://goo.gl/zgShXD">
+    <link rel="shortcut icon" type="image/png" href="images/title.png">
+    <meta name="ROBOTS" content="index">
+    <meta name="Author" content="@stefanuspn">
+    <meta name="copyright" content="Copyright@2018 | All Right Reserved">
+    <meta property="og:title" content="Welcome to my page @stefanuspn">
+    <meta property="og:description" content="Welcome to my page @Stefanus Prasetyo Nugroho ">
+    <meta property="og:name" content="Stefanus Prasetyo Nugroho">
+    <meta name="language" content="Indonesian, English">
+    <meta name="distribution" content="Global">
+    <meta name="rating" content="General">
+    <meta name="expires" content="1800">
+    <meta name="theme-color" content="#fa5252">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     <!--script css -->
-      <link href="https://fonts.googleapis.com/css?family=Montserrat|Baloo+Thambi" rel="stylesheet" media="screen">
-      <link href='https://fonts.googleapis.com/css?family=Bungee Shade' rel='stylesheet' media="screen">
-      <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
-      <link href="css/portofolio.min.css" rel="stylesheet" media="screen">
-      <link rel="stylesheet" type="text/css" href="css/responsive.min.css" media="screen">
-      <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-      <link rel="stylesheet" type="text/css" href="css/minireset.css" media="screen">
-      <link rel="stylesheet" type="text/css" href="css/toastr.css" media="screen">
-      <link rel="stylesheet" type="text/css" href="css/lightbox.css">
-      <link href="css/jquery.lineProgressbar.css" rel="stylesheet" type="text/css">
-      <link href="css/animate.css" rel="stylesheet" />
-      <link rel="stylesheet" href="css/site.css">
+    <!-- JS-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/responsive.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript" src="dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="js/jQueryStefCode.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
+     <script type="text/javascript">
+     $(document).ready(function () {
+     $('a[href^="#"]').on('click', function (e) {
+         e.preventDefault();
 
-     <!--script javascript-->
-     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-     <script type="text/javascript" src="js/toastr.min.js"></script>
-     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="js/responsive.min.js"></script>
-     <script type="text/javascript" src="js/lightbox.js"></script>
-     <script src="js/jquery.lineProgressbar.js"></script>
-     <script type="text/javascript" src="js/app.min.js"></script>
+         var target = this.hash,
+             $target = $(target);
+
+         $('html, body').stop().animate({
+             'scrollTop': $target.offset().top - 80
+         }, 900, 'swing', function () {
+             window.location.hash = target;
+         });
+     });
+ });
+    </script>
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="dist/sweetalert.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/portofolio.css">
+   
+
 </head>
-
 <body data-spy="scroll" data-target=".navbar" data-offset="50" style="visibility: visible;">
 
    <div class="navbar-inverse navbar-fixed-top" style="  border-bottom: 1px dashed white; box-shadow: 1px 5px 2px black; ">
@@ -56,267 +77,236 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a class="nav-link" href="#home"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
-                    <li><a class="nav-link" href="#education"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Education</a></li>
-                    <li><a class="nav-link" href="#skill"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Skills</a></li>
-                    <li><a class="nav-link" href="#karya"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Karya</a></li>
-                    <li><a class="nav-link" target="_blank" href="http://stefanusfile.000webhostapp.com/"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Download Ebook Dan Source Code</a></li>
+                    <li class="active"><a class="nav-link" href="#gambar"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li> 
+                    <li><a class="nav-link" href="#stef-about"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;About</a></li> 
+                    <li><a class="nav-link" href="#stef-skill"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Skills</a></li>
+                    <li><a class="nav-link" href="#stef-karya"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Karya</a></li>
+                    <li><a class="nav-link" href="#stef-kontak"><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp;Kontak</a></li>
                 </ul>
             </div>
     </div>
-    <br><br>
-    <div id="gambar">
+   
+    <!-- Foto-->
+        <br><br>
+   <div id="gambar">
         
-        <div class ="myname" style="position: relative;">
-          <img src="stefanus.JPG" class="img-circle" style=" width: 300px; height: 200px;  border: 10px solid grey;">
-            <h2 style="color:white; text-shadow: 5px 2px 2px white;">Stefanus Prasetyo Nugroho</h2>
-             <div class="motto-myname"><h2>#IT Is My Life <br> #Programming Is My Life</h2></div>
+        <div class ="myname wow bounceInLeft" style="position: relative;">
+          <img src="images/orang.jpg" class="img-circle wow bounceInLeft" style=" width: 300px; height: 200px;  border: 10px solid grey;">
+            <h1 class="wow bounceInLeft">Stefanus Prasetyo Nugroho</h1>
+             <div class="motto-myname wow bounceInLeft"><h2>#IT Is My Life <br> #Programming Is My Life</h2></div>
         </div>
-      <img  src="http://diysolarpanelsv.com/images/alien-ufo-clipart-22.png"  height="200" alt="UFO" width="300" id="fotogoyang">
+      <img src="http://diysolarpanelsv.com/images/alien-ufo-clipart-22.png"  class="wow bounceInLeft" height="100" alt="UFO" width="300" id="fotogoyang">
     </div>
 
-<!--Skill-->
-    <div class="jumbotron" id="skill" style="overflow: hidden;">
-       <p style="text-align: center;font-size: 25px;">Skills</p>
-            <div class="row">
-                <div class="col-md-3" style="margin-left: 10%; margin-right: 5px; ">
-                    <div class="thumbnail">
-                        <a href="css3.png" rel="lightbox" title="my caption"><img src="css3.png" style="width: 60%; height: 100px;"></a>
-                        <div class="caption">
-                            <h2>CSS 3</h2>
-                            <div id="css"></div>
-                        </div>
+    <!-- About-->
+    <section class="stefanus" id="stef-about">
+      <div class="container">
+        <div class="row wow bounceInLeft">
+          <div class="col-sm-12">
+            <h2 class="text-center wow bounceInLeft">About</h2>
+            <center><hr></center>
+          </div>
+        </div>
 
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="html5.png" rel="lightbox" title="my caption"><img src="html5.png" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>HTML5</h2>
-                            <div id="html"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="php.png" rel="lightbox" title="my caption"><img src="php.png" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>PHP</h2>
-                            <div id="php"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" style="margin-left: 10%; margin-right: 5px;">
-                    <div class="thumbnail">
-                       <a href="java.png" rel="lightbox" title="my caption"><img src="java.png" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>JAVA</h2>
-                            <div id="java"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="javascript.jpg" rel="lightbox" title="my caption"><img src="javascript.jpg" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>JAVASCRIPT</h2>
-                            <div id="javascript"></div>
-                        </div>
-                    </div>
-                </div>
-                  <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="jquery.jpg" rel="lightbox" title="my caption"><img src="jquery.jpg" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>JQUERY</h2>
-                            <div id="jquery"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" style="margin-left: 10%; margin-right: 5px;">
-                    <div class="thumbnail">
-                       <a href="vb.net.jpg" rel="lightbox" title="my caption"><img src="vb.net.jpg" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>ViSUAL BASIC.NET</h2>
-                            <div id="vb"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="photoshop.png" rel="lightbox" title="my caption"><img src="photoshop.png" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>ADOBE PHOTOSHOP</h2>
-                            <div id="photoshop"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                  <div class="wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="thumbnail">
-                       <a href="unity.png" rel="lightbox" title="my caption"><img src="unity.png" style="width: 60%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>GAME PROGRAMMING WITH UNITY (Comming Soon)</h2>
-                            <div id="unity"></div>
-                        </div>
-                    </div>
-                  </div>  
-                </div>
-            </div>  
-    </div>
-      <!--Education-->
-      <div class="jumbotron" id="education" style="background-color:#0d243c;;overflow: hidden;">
-       <p style="text-align: center;font-size: 25px; color: white;">Education</p>
-            <div class="row">
-                <div class="col-md-3" style="margin-left: 10%;">
-                    <div class="thumbnail">
-                        <a href="sd.jpg" rel="lightbox" title="SDN Wanasari 12"><img src="sd.jpg" style="width: 1000%; height: 100px;"></a>
-                        <div class="caption">
-                            <h2>SDN Wanasari 12 (2003 - 2009)</h2>
-                            
-                        </div>
+        <div class="row  wow bounceInLeft">
+          <div class="col-sm-6">
+           <div class='hp1'>
+               <img src='images/kamera.png' class='imgheader1 '>
+               <img src='images/stefanus.jpg' style='border: 1px solid black; width: 93%; height: 450px;'>
+            </div>
+        <div class='hp2'>
+          <img src='images/kamera1.png' class='imgheader2 wow bounceInLeft'>
+          <div class='kontenhp2'> 
+               <div> <img src='images/1.jpg'  alt='Image Caption 1' /> </div>
+               <div> <img src='images/2.jpg'  alt='Image Caption 2' /> </div>
+               <div> <img src='images/3.jpg'  alt='Image Caption 3' /> </div>
+               <div> <img src='images/4.jpg' alt='Image Caption 4' /> </div>
+               <div> <img src='images/5.jpg' alt='Image Caption 5' /> </div>
+               <div> <img src='images/6.jpg'  alt='Image Caption 6' /> </div>
+               <div> <img src='images/7.jpg'  alt='Image Caption 7' /> </div>
+               <div> <img src='images/8.jpg'  alt='Image Caption 8' /> </div>
+               <div> <img src='images/9.jpg'  alt='Image Caption 9' /> </div>
+               
+            
+          </div>
+          <img src='images/tombol.png' class='imgfooter wow bounceInLeft'>
+        </div>
+          </div>
+          <div class="col-sm-6 wow bounceInRight">
+            <p style="font-family: 'Baloo Thambi'; font-size: 18px;">Nama saya adalah Stefanus Prasetyo Nugroho, Saya lahir di Bekasi pada tanggal 20 Oktober 1997, tempat tinggal saya di Kec.Cibitung Kab Bekasi   Sekarang saya sedang fokus dunia web development di bidang FrontEnd,Dan BackEnd dan Bisnis Kuliner yaitu Bolu Gula Merah, Ice Cream Milo, Ice Cream Vanila, Ice Cream Strawberry</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="smp.jpg" rel="lightbox" title="SMP PGRI Tambun Selatan"><img src="smp.jpg" style="width: 100%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>SMP PGRI Tambun Selatan (2009 - 2012)</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="sma.jpg" rel="lightbox" title="SMAN 1 Cibitung"><img src="sma.jpg" style="width: 100%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>SMAN 1 Cibitung (2012 - 2015) </h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3" style="margin-left: 10%;">
-                    <div class="thumbnail">
-                       <a href="lp3i.jpg" rel="lightbox" title="LP3I Cikarang"><img src="lp3i.jpg" style="width: 100%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>LP3I Cikarang (2015 - 2017) </h2>
-                        </div>
-                    </div>
-                </div>
-           </div>
+    <!--Akhir About-->
 
     <!-- Karya-->
+    <section class="stef-karya" id="stef-karya">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-center wow bounceInLeft">
+            <h2>Karya</h2>
+            <center><hr></center>
+          </div>
+        </div>
 
-      <div class="jumbotron" id="karya" style="background-color:#5D91E6;overflow: hidden;">
-       <p style="text-align: center;font-size: 25px;">Karya</p>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <a href="karya.png" rel="lightbox" title="Halaman Login Facebook"><img src="karya.png" style="width: 1000%; height: 100px;"></a>
-                        <div class="caption">
-                            <h2>Halaman Login Facebook</h2>
-                            
-                        </div>
+        <div class="row wow bounceInLeft">
+          <div class="col-sm-4">
+            <a href="" class="thumbnail">
+            <img src="images/karya.png" alt="" ></a>
+            <h3 class="text-center">Halaman Login Facebook</h2>
+          </div>
+           <div class="col-sm-4">
+            <a href="" class="thumbnail">
+            <img src="images/gamesuit.png" alt="" ></a>
+            <h3 class="textcenter">Game Suit Sederhana</h3>
+          </div>
+           <div class="col-sm-4">
+            <a href="" class="thumbnail">
+            <img src="images/loginig.png" alt="" ></a>
+            <h3 class="text-center">Halaman Login Instagram</h3>
+          </div>
+           <div class="col-sm-4">
+            <a href="" class="thumbnail">
+            <img src="images/profilfb.png" alt=""></a>
+           <div class="caption"><h3>Halaman Profil Facebook</h3></div>
+          </div>
+           <div class="col-sm-4">
+            <a href="" class="thumbnail">
+            <img src="images/emoticon.jpg" alt=""></a>
+            <h3 class="text-center">Library PHP StefEmoticon</h3>
+          </div>
+           <div class="col-sm-4">
+            <a href="" class="thumbnail">
+            <img src="images/stefcountdown.png" alt=""></a>
+            <h3 class="text-center">jQuery StefCountdown</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Karya-->
 
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="profilfb.png" rel="lightbox" title="Halaman Profil Facebook"><img src="profilfb.png" style="width: 100%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>Halaman Profil Facebook</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="loginig.png" rel="lightbox" title="Halaman Login Insagram"><img src="loginig.png" style="width: 100%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>Halaman Login Instagram</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                       <a href="portofolio3.png" rel="lightbox" title="Halaman Portofolio"><img src="portofolio3.png" style="width: 100%; height: 100px; "></a>
-                        <div class="caption">
-                            <h2>Halaman Portofolio</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-    </div>
-<br><br><br><br>
-      <footer style="overflow: hidden;">
-    <div class="footer" id="footer">
-            <div class="row">
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-2  col-md-2 col-sm-4 col-xs-6">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                        <li> <a href="#"> Lorem Ipsum </a> </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                    <h3> Lorem Ipsum </h3>
-                    <ul>
-                        <li>
-                            <div class="input-append newsletter-box text-center">
-                                <input type="text" class="full text-center" placeholder="Email ">
-                                <button class="btn  bg-gray" type="button"> Lorem ipsum <i class="fa fa-long-arrow-right"> </i> </button>
-                            </div>
-                        </li>
-                    </ul>
-                    <ul class="social">
-                        <li> <a href="https://www.facebook.com/prasetyoepen"> <i class=" fa fa-facebook">   </i> </a> </li>
-                        <li> <a href="https://www.instagram.com/stefanus_prasetyo_nugroho/?hl=en"> <i class="fa fa-instagram">   </i> </a> </li>
-                        <li> <a href="https://plus.google.com/106093177651147180316"> <i class="fa fa-google-plus">   </i> </a> </li>
-                        <li> <a href="#"> <i class="fa fa-whatsapp">   </i> </a></li>
-                        <li> <a href="http://t.me/stefanuspn"> <i class="fa fa-telegram">   </i> </a></li>
-                    </ul>
-                </div>
+    <!-- Awal Education-->
+     <section class="stef-education" id="stef-skill">
+      <div class="container">
+        <div class="row wow bounceInLeft">
+          <div class="col-sm-3 text-center">
+            <h2 style="color: white;">My Skill</h2>
+            <center><hr></center>
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-sm-3 wow bounceInLeft">
+           <h2 style="color: white;">HTML</h2>
+           <div id="myProgressHTML">
+              <div id="myBarHTML"></div>
+            </div><br>
+            <button class="btn btn-success" onclick="move()">View Skill</button> 
+          </div>
+           
+           <div class="col-sm-3 wow bounceInLeft">
+           <h2 style="color: white;">PHP</h2>
+           <div id="myProgressPHP">
+              <div id="myBarPHP"></div>
+            </div><br>
+            <button class="btn btn-success" onclick="php()">View Skill</button> 
+          </div>
+          <div class="col-sm-3 wow bounceInLeft">
+            <h2 style="color: white;">CSS</h2>
+            <div id="myProgressCSS">
+              <div id="myBarCSS"></div>
             </div>
-            <!--/.row--> 
-        <!--/.container--> 
+            <br>
+            <button class="btn btn-success" onclick="css()">View Skills</button>
+          </div>
+          <div class="col-sm-3 wow bounceInLeft">
+            <h2 style="color: white;">Javascript</h2>
+            <div id="myProgressJS">
+              <div id="myBarJS"></div>
+            </div>
+            <br>
+            <button class="btn btn-success" onclick="js()">View Skills</button>
+          </div>
+          <div class="col-sm-3 wow bounceInLeft">
+            <h2 style="color: white;">Java</h2>
+            <div id="myProgressJAVA">
+              <div id="myBarJAVA"></div>
+            </div>
+            <br>
+            <button class="btn btn-success" onclick="java()">View Skills</button>
+          </div>
+          <div class="col-sm-3 wow bounceInLeft">
+            <h2 style="color: white;">VB.NET</h2>
+            <div id="myProgressVBNET">
+              <div id="myBarVBNET"></div>
+            </div>
+            <br>
+            <button class="btn btn-success" onclick="vbnet()">View Skills</button>
+          </div>
+          <div class="col-sm-3 wow bounceInLeft">
+            <h2 style="color: white;">Adobe Photoshop</h2>
+            <div id="myProgressPHOTOSHOP">
+              <div id="myBarPHOTOSHOP"></div>
+            </div>
+            <br>
+            <button class="btn btn-success" onclick="photoshop()">View Skills</button>
+          </div>
+          </div>
+      </div>
+    </section>
+     <!-- Kontak-->
+    <section id="stef-kontak" class="stefanus">
+  <div class="container">
+    <div class="well well-sm">
+      <h3><strong>Contact Us</strong></h3>
     </div>
-    <!--/.footer-->
-    
-    <!--/.footer-bottom--> 
-</footer>
-<div class="footer-bottom">
-            <p class="pull-left" style="color: white;"> Copyright By Stefanus Prasetyo Nugroho </p>
-    </div>
-      <script type="text/javascript" src="js/progress.js"></script>
-</body>
-</html>
   
-        
+  <div class="row wow bounceInLeft">
+    <div class="col-md-7" id="map">
+       
+      </div>
+
+      <div class="col-md-5">
+          <h4><strong>Get in Touch</strong></h4>
+        <form action="https://formspree.io/stefanusnugroho585@gmail.com"
+      method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" value="" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="_replyto" value="" placeholder="E-mail">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="Message" rows="3" placeholder="Message"></textarea>
+          </div>
+          <button class="btn btn-default" type="submit" name="button">
+              <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Send
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!--Akhir About-->
+    <script>
+      function initMap() {
+        var uluru = {lat: -6.235530, lng: 107.091237};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBRMGD9yRbxXALm2n_hjCbkZmbhB9yMLkk&callback=initMap">
+    </script>
+  </body>
+ 
+</html>
